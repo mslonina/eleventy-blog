@@ -2,6 +2,7 @@
 title: Demo markdown entry
 type: article
 status: review
+date: 2025-01-07
 ---
 so here is it
 
