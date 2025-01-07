@@ -5,15 +5,14 @@ content:
     type: collection
     path: content/blog
     view:
-      fields: [ title, draft, status, date ]
+      fields: [ title, type, status, date ]
     fields:
       - { name: title, label: Title, type: string, required: true }
-      - { name: description, label: Description, type: string }
+      - { name: type, label: Type, type: select, default: article, options: {values: [ article, page, link, poem ]} }
+      - { name: status, label: Status, type: select, default: draft, options: {values: [ draft, review, published, archived ]} }
       - { name: date, label: Date, type: date }
-      - { name: draft, label: Draft, type: boolean }
       - { name: tags, label: Tags, type: string, list: true }
       - { name: body, label: Body, type: rich-text }
-      - { name: status, label: Status, type: select, default: draft, options: {values: [ draft, review, published, archived ]} }
   - name: about
     label: About page
     type: file
