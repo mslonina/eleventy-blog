@@ -1,7 +1,7 @@
 ---
 title: Demo markdown entry
 draft: false
-status: News
+status: draft
 ---
 so here is it
 
