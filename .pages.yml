@@ -13,7 +13,7 @@ content:
       - { name: draft, label: Draft, type: boolean }
       - { name: tags, label: Tags, type: string, list: true }
       - { name: body, label: Body, type: rich-text }
-      - { name: status, label: Status, type: select, options: {values: [ Tech, News, Sports ]} }
+      - { name: status, label: Status, type: select, default: draft, options: {values: [ draft, review, published, archived ]} }
   - name: about
     label: About page
     type: file
